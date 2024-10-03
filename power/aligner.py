@@ -385,7 +385,7 @@ class PowerAligner:
                     elif ref_type == TokType.Phoneme and not ref_word_started:
                         ref_word_started = True
                         try:
-                            ref_word_item = ref_word_iter.__next__()
+                            ref_word_item = next(ref_word_iter)
                             ref_word_builder.append(ref_word_item[1])
                         except StopIteration:
                             pass
@@ -425,7 +425,7 @@ class PowerAligner:
                     elif hyp_type == TokType.Phoneme and not hyp_word_started:
                         hyp_word_started = True
                         try:
-                            hyp_word_item = hyp_word_iter.__next__()
+                            hyp_word_item = next(hyp_word_iter)
                             hyp_word_builder.append(hyp_word_item[1])
                         except StopIteration: 
                             pass
