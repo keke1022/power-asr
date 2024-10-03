@@ -1,3 +1,3 @@
-from normalize.numbers import NumbersEnum, NumToTextEng, TextToNumEng
-from normalize.contractions import ContractionsEng 
-from normalize.normalize import HypothesisNormalizer, splitHyphens
+from .numbers import NumbersEnum, NumToTextEng, TextToNumEng
+from .contractions import ContractionsEng 
+from .normalize import HypothesisNormalizer, splitHyphens

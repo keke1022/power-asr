@@ -1,5 +1,5 @@
-from normalize import NumToTextEng, TextToNumEng
-from normalize import ContractionsEng
+from .numbers import NumToTextEng, TextToNumEng
+from .contractions import ContractionsEng
 from power.levenshtein import ExpandedAlignment
 import re
 from collections import defaultdict
